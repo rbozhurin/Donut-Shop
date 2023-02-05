@@ -1,9 +1,6 @@
-/* Imports */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@900&display=swap");
 
-/* Custom properties */
 :root {
-  /* Typography */
   --ff-main: "Outfit", sans-serif;
   --fs-100: 2.25rem;
   --fs-400: 2.5rem;
@@ -11,7 +8,6 @@
   --fs-600: 4rem;
   --fs-900: 6rem;
 
-  /* Colors */
   --clr-neutral-900: 0, 0%, 16%;
   --clr-neutral-100: 0, 0%, 100%;
 
@@ -20,44 +16,29 @@
   --clr-cyan: 179, 81%, 52%;
   --clr-blue: 251, 66%, 53%;
 
-  --shadow: 7px 25px 12px rgba(0,0,0,0.4);
+  --shadow: 7px 25px 12px rgba(0, 0, 0, 0.4);
 }
 
-/* CSS reset by Josh Comeau */
-
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-/*
-  2. Remove default margin
-*/
+
 * {
   margin: 0;
 }
-/*
-  3. Allow percentage-based heights in the application
-*/
+
 html,
 body {
   height: 100%;
 }
-/*
-  Typographic tweaks!
-  4. Add accessible line-height
-  5. Improve text rendering
-*/
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-/*
-  6. Improve media defaults
-*/
+
 img,
 picture,
 video,
@@ -66,18 +47,14 @@ svg {
   display: block;
   max-width: 100%;
 }
-/*
-  7. Remove built-in form typography styles
-*/
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-/*
-  8. Avoid text overflows
-*/
+
 p,
 h1,
 h2,
@@ -87,15 +64,11 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-/*
-  9. Create a root stacking context
-*/
+
 #root,
 #__next {
   isolation: isolate;
 }
-
-/* Utility classes */
 
 .fs-100 {
   font-size: var(--fs-100);
@@ -135,7 +108,6 @@ h6 {
   filter: drop-shadow(var(--shadow));
 }
 
-/* General styling */
 body {
   height: 100%;
   font-family: var(--ff-main);
@@ -153,8 +125,6 @@ body {
   line-height: 72px;
   color: inherit;
   margin: 0 !important;
-  /* We are gettin .title:not(:last-child) {margin-bottom: 1.5rem} from bulma.min.css.
-   The important will do until I find why. */
 }
 
 .button {
@@ -175,8 +145,6 @@ body {
   margin-top: 4.75rem;
 }
 
-/* Layout */
-
 .App {
   height: 100%;
 }
@@ -190,17 +158,14 @@ body {
   position: absolute;
 }
 
-/* Start Screen */
-
 .start-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   gap: 2.375rem;
-  
+
   padding-bottom: 5rem;
-  /* padding-top: 50vh; */
 
   background: hsl(var(--clr-pink));
   background: linear-gradient(
@@ -229,7 +194,7 @@ body {
 }
 .start-screen__donut-2 {
   top: 11rem;
-  right: -.5rem;
+  right: -0.5rem;
   width: 280px;
   height: 280px;
 }
@@ -246,13 +211,11 @@ body {
   }
 }
 
-/* Menu Screen */
-
 .menu-screen {
   background-color: hsl(var(--clr-cyan));
-  padding: 4rem clamp(0.8rem, 2.25rem, 2.25rem) 2.25rem clamp(0.8rem, 15px, 2.25rem);
+  padding: 4rem clamp(0.8rem, 2.25rem, 2.25rem) 2.25rem
+    clamp(0.8rem, 15px, 2.25rem);
   overflow-y: scroll;
-
 }
 
 .menu-screen__donuts-list {
@@ -267,21 +230,18 @@ body {
   display: flex;
   align-items: center;
   gap: 2.5rem;
-
 }
 
 .menu-screen__donuts-list-title {
   font-size: var(--fs-100);
   line-height: var(--fs-100);
-  text-align: right ;
+  text-align: right;
 }
 
 .menu-screen__donuts-list-donut {
   width: 130px;
   aspect-ratio: 1;
 }
-
-/* Payment Screen */
 
 .payment-screen {
   display: flex;
@@ -306,9 +266,8 @@ body {
   z-index: -1;
 }
 
-/* Preparation Screen */
-
-.preparation-screen, .ready-screen {
+.preparation-screen,
+.ready-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -337,17 +296,13 @@ body {
   height: 289px;
 }
 
-/* Ready Screen */
-
 .ready-screen {
- 
   background: hsl(var(--clr-blue));
   background: linear-gradient(
     50deg,
     hsl(var(--clr-blue)) 65%,
     hsl(var(--clr-cyan)) 65%
   );
-  
 }
 
 .ready-sccreen__text {
@@ -377,16 +332,14 @@ body {
   }
 }
 
-/* Animations */
-
 .donut-rotate {
   animation: rotate 8s linear 0s infinite normal none;
 }
 
 @keyframes rotate {
   0% {
-    transform:  rotate(360deg);
-}
-100% {
-}
+    transform: rotate(360deg);
+  }
+  100% {
+  }
 }
