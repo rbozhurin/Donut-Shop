@@ -1,0 +1,76 @@
+.MenuScreen {
+    width: 100vw;
+    height: 100vh;
+    background: #21e8e5;
+}
+
+.theMS {
+    position: absolute;
+    left: 252px;
+    top: 45px;
+}
+
+.theMS-1 {
+    font-size: 48px !important;
+}
+
+.titleContainerMS {
+    position: absolute;
+    left: 80px;
+    top: 100px;
+}
+
+.order-btn-container {
+    position: absolute;
+    top: 250px;
+}
+
+.order-btn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100vw;
+    text-align: right;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.dont-names-container {
+    text-align: right;
+    padding-right: 30px;
+    color: #ffffff;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 38px;
+}
+
+.ms-sp-shadow-props {
+    width: 90px;
+    height: 90px;
+    left: 250px;
+    top: 260px;
+}
+
+.ms-mm-shadow-props {
+    width: 90px;
+    height: 90px;
+    left: 250px;
+    top: 400px;
+}
+
+.ms-tb-shadow-props {
+    width: 90px;
+    height: 90px;
+    left: 250px;
+    top: 543px;
+}
+
+.ms-ud-shadow-props {
+    width: 90px;
+    height: 90px;
+    left: 250px;
+    top: 686px;
+}
